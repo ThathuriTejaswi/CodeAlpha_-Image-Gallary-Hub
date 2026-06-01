@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="ice-cream">Ice Cream</li>
+            <li class="buttons" data-filter="chocolate">Chocolate</li>
+            <li class="buttons" data-filter="cake">Cake</li>
+            <li class="buttons" data-filter="juice">Juice</li>
+            <li class="buttons" data-filter="sandwich">Sandwich</li>
+        </ul>
+
+        <div class="image-container">
+
+            <!-- Ice Cream -->
+            <a href="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?q=80&w=1170&auto=format&fit=crop" class="image ice-cream">
+                <img src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?q=80&w=1170&auto=format&fit=crop" alt="Ice Cream">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=1000&auto=format&fit=crop&q=60" class="image ice-cream">
+                <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=1000&auto=format&fit=crop&q=60" alt="Ice Cream">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1633933358116-a27b902fad35?q=80&w=764&auto=format&fit=crop" class="image ice-cream">
+                <img src="https://images.unsplash.com/photo-1633933358116-a27b902fad35?q=80&w=764&auto=format&fit=crop" alt="Ice Cream">
+            </a>
+
+            <!-- Chocolate -->
+            <a href="https://images.unsplash.com/photo-1511381939415-e44015466834?w=800" class="image chocolate">
+                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=800" alt="Chocolate">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800" class="image chocolate">
+                <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800" alt="Chocolate">
+            </a>
+
+            <!-- Cake -->
+            <a href="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" class="image cake">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Cake">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800" class="image cake">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800" alt="Cake">
+            </a>
+
+            <!-- Juice -->
+            <a href="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800" class="image juice">
+                <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800" alt="Juice">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=800&auto=format&fit=crop" class="image juice">
+    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=800&auto=format&fit=crop" alt="Juice">
+</a>
+
+            <!-- Sandwich -->
+            <a href="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800" class="image sandwich">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800" alt="Sandwich">
+            </a>
+
+            <a href="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800" class="image sandwich">
+                <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800" alt="Sandwich">
+            </a>
+
+        </div>
+
+    </div>
+    <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="lightbox-img" src="" alt="">
+    <span class="next">&#10095;</span>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
